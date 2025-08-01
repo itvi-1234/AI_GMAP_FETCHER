@@ -119,11 +119,7 @@ webdriver-manager==4.0.1
 python-dotenv==1.0.0
 google-generativeai==0.3.2
 groq==0.4.1
-crawl4ai==0.2.77
 pandas==2.1.3
-beautifulsoup4==4.12.2
-lxml==4.9.3
-requests==2.31.0
 ```
 
 ## 🎯 How It Works
