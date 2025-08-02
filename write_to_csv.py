@@ -15,7 +15,7 @@ def save_venues_to_csv_simple(venues, filename="extracted_venues.csv"):
     """
     
     if not venues:
-        print("❌ No venues to save")
+        print("No venues to save")
         return
 
     # Read existing venue keys (name + phone) to avoid duplicates
@@ -36,7 +36,7 @@ def save_venues_to_csv_simple(venues, filename="extracted_venues.csv"):
             existing_venues.add(unique_key)
 
     if not new_unique_venues:
-        print("ℹ️ No new unique venues to add.")
+        print("No new unique venues to add.")
         return
 
     # Collect all keys from new venues
@@ -57,5 +57,5 @@ def save_venues_to_csv_simple(venues, filename="extracted_venues.csv"):
             row = {key: venue.get(key, "N/A") for key in fieldnames}
             writer.writerow(row)
 
-    print(f"✅ Appended {len(new_unique_venues)} new unique venues to '{filename}'")
+    print(f"Appended {len(new_unique_venues)} new unique venues to '{filename}'")
 

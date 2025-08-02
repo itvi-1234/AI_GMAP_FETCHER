@@ -58,15 +58,15 @@ class ReplyGenerator:
             genai.configure(api_key=gemini_api_key)
             self.model_name = "models/gemini-1.5-flash-latest"
             self.llm_client = genai.GenerativeModel(self.model_name)
-            # print(f"Using Gemini model: {self.model_name}")
+    
 
         elif self.provider == "groq":
             groq_api_key = os.getenv("GROQ_API_KEY")
             if not groq_api_key:
                 raise ValueError("GROQ_API_KEY environment variable not set.")
             self.llm_client = Groq(api_key=groq_api_key)
-            self.model_name = "deepseek-r1-distill-llama-70b" # A fast and capable Groq model
-            # print(f"Using Groq model: {self.model_name}")
+            self.model_name = "deepseek-r1-distill-llama-70b" 
+           
         else:
             raise ValueError("Invalid provider specified. Choose 'Gemini' or 'Groq'.")
 

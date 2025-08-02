@@ -39,10 +39,10 @@ def wait_for_google_maps(driver, timeout=30):
             EC.presence_of_element_located((By.CSS_SELECTOR, "div[role='feed']"))
         )
         time.sleep(3)
-        print("✅ Google Maps loaded!")
+        print("Google Maps loaded!")
         return True
     except TimeoutException:
-        print("❌ Google Maps failed to load!")
+        print("Google Maps failed to load!")
         return False
 
 def main():
@@ -68,7 +68,7 @@ def main():
 
     locations = [loc.strip() for loc in reply.split(",")]
 
-    print(f"🤖 commericial Localities for {city}:{locations}")
+    print(f"commericial Localities for {city}:{locations}")
 
     for data in locations:
 
@@ -86,26 +86,26 @@ def main():
         
         try:
             # Load the page
-            print("🌐 Loading Google Maps...")
+            print("Loading Google Maps...")
             driver.get(url)
             
             # Wait for page to load
             if not wait_for_google_maps(driver):
-                print("❌ Failed to load Google Maps")
+                print("Failed to load Google Maps")
                 return
             
             # Scroll to load all venues
             print("\n" + "=" * 50)
-            print("📜 PHASE 1: SCROLLING")
+            print("PHASE 1: SCROLLING")
             scroll_success = scroll_google_maps(driver, max_scrolls, scroll_delay)
             
             if not scroll_success:
-                print("❌ Scrolling failed")
+                print("Scrolling failed")
                 return
             
             # Extract venues directly from the scrolled page
             print("\n" + "=" * 50)
-            print("🕷️ PHASE 2: EXTRACTING DATA")
+            print("PHASE 2: EXTRACTING DATA")
             venues = extract_venues_with_selenium(driver)
             
             if venues:
@@ -113,23 +113,23 @@ def main():
                 save_venues_to_csv_simple(venues, output_filename)
                 
                 print("\n" + "=" * 50)
-                print("✅ OPERATION COMPLETE!")
-                print(f"📊 Total venues extracted: {len(venues)}")
-                print(f"📁 Results saved to: {output_filename}")
+                print("OPERATION COMPLETE!")
+                print(f"Total venues extracted: {len(venues)}")
+                print(f"Results saved to: {output_filename}")
                 
                 # Show sample data
             else:
-                print("❌ No venues extracted")
+                print("No venues extracted")
 
         except Exception as e:
-            print(f"❌ Error: {e}")
+            print(f"Error: {e}")
             import traceback
             traceback.print_exc()
         
         finally:
-            print("\n🔧 Cleaning up...")
+            print("\nCleaning up...")
             driver.quit()
-            print("✅ Browser closed")
+            print("Browser closed")
 
 if __name__ == "__main__":
     main()

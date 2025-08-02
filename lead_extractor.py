@@ -5,7 +5,7 @@ def extract_venues_with_selenium(driver):
     """Extract venue data directly using Selenium after scrolling"""
     
     print("\n" + "=" * 50)
-    print("🕷️ Extracting venues with Selenium...")
+    print("Extracting venues with Selenium...")
     
     try:
         # Wait a bit more for all content to be fully rendered
@@ -52,12 +52,12 @@ def extract_venues_with_selenium(driver):
                     venues.append(venue_data)
 
             except Exception as e:
-                print(f" ⚠️ Error processing venue {i}")
+                print(f"Error processing venue {i}")
                 continue
         
-        print(f"✅ Successfully extracted {len(venues)} venues")
+        print(f"Successfully extracted {len(venues)} venues")
         return venues
         
     except Exception as e:
-        print(f"❌ Error during extraction: {e}")
+        print(f"Error during extraction: {e}")
         return []
