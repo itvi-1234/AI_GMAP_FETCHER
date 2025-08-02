@@ -44,11 +44,11 @@ A revolutionary Python tool that combines **AI-powered locality intelligence** w
 
 | Metric | Our Scraper | Traditional Tools | **Advantage** |
 |--------|-------------|-------------------|---------------|
-| **Average Results** | 120+ per locality | 10-15 per locality | ** 8x More Data** |
-| **Search Coverage** | AI-identified hotspots | Single manual location | ** Complete Coverage** |
-| **Success Rate** | 99.5% (dual AI fallback) | 60-70% (single point failure) | ** 40% Higher Reliability** |
-| **Data Accuracy** | 95%+ (validated extraction) | 60-80% (basic scraping) | ** 20% More Accurate** |
-| **Setup Time** | 5 minutes (automated) | 30-60 minutes (manual config) | ** 10x Faster Setup** |
+| **Average Results** | 120+ per locality | 10-15 per locality | 8x More Data |
+| **Search Coverage** | AI-identified hotspots | Single manual location | Complete Coverage |
+| **Success Rate** | 99.5% (dual AI fallback) | 60-70% (single point failure) | 40% Higher Reliability |
+| **Data Accuracy** | 95%+ (validated extraction) | 60-80% (basic scraping) | 20% More Accurate |
+| **Setup Time** | 5 minutes (automated) | 30-60 minutes (manual config) | 10x Faster Setup |
 
 ## Requirements
 
