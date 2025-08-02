@@ -40,7 +40,7 @@ A revolutionary Python tool that combines **AI-powered locality intelligence** w
 | **Scalability**            |  **Handles large datasets efficiently**             |  **Memory issues with big searches**         |
 
 
-### ** Performance Comparison**
+### Performance Comparison
 
 | Metric | Our Scraper | Traditional Tools | **Advantage** |
 |--------|-------------|-------------------|---------------|
