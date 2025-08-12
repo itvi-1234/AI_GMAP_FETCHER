@@ -29,26 +29,11 @@ class ReplyGenerator:
         self.provider = provider.lower() 
 
         self.system_prompt = """
-            You are a commercial locality extraction assistant.
-
-            **REQUIREMENTS:**
-            - Return ONLY a clean, comma-separated list
-            - Focus on areas with abundant commercial activity
-            - Include popular shopping hubs, business districts, marketplaces, and food zones
-            - Exclude purely residential areas, rural zones, or industrial-only regions
-
-            **INCLUDE:**
-            Major pouplation abundant areas
-            Shopping malls and complexes
-            Market areas and bazaars  
-            Restaurant districts and food streets
-            Central business districts (CBD)
-            Commercial plazas and centers
-            Entertainment and retail zones
-            Popular cafe and dining areas
-            Tourist commercial areas
-            Mixed-use developments with retail
-
+            
+        It remains hidden due to clone issues
+        Available on request only 
+        mail to Rjsumit151@gmail.com
+        or whatsapp 9460357477
             """
 
         if self.provider == "gemini":

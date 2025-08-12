@@ -7,7 +7,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
-from crawl4ai import AsyncWebCrawler
 from Ai_url_generator import ReplyGenerator
 from Scroll_maps_with_count import scroll_google_maps
 from lead_extractor import extract_venues_with_selenium
